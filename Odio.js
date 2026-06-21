@@ -4,7 +4,7 @@ document.getElementById('MENSAGEM').addEventListener('submit', function(event) {
     const formData = new FormData(this); // Captura todos os dados do formulário
 
     // Envia os dados para o arquivo PHP
-    fetch('/Politico/PHP/processador.php', {
+    fetch('processador.php', {
         method: 'POST',
         body: formData
     })
